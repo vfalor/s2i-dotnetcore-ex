@@ -34,6 +34,21 @@ namespace app.Controllers
             return View();
         }
 
+	public IActionResult Careers()
+        {
+            return View();
+        }
+
+	public IActionResult Team()
+        {
+            return View();
+        }
+	
+	public IActionResult Support()
+        {
+            return View();
+        }
+
 	public IActionResult Categary1()
         {
             return View();

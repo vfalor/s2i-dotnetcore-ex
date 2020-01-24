@@ -29,37 +29,23 @@ namespace app.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-        
-         public IActionResult returnPolicy()
+        public IActionResult privacy()
         {
             return View();
         }
         public IActionResult security()
-
         {
-
             return View();
-
-        }
-        public IActionResult privacy()
-
-        {
-
-            return View();
-
         }
         public IActionResult termsofUse()
-
         {
-
             return View();
-
         }
-
+         public IActionResult returnPolicy()
+        {
+            return View();
+        }
+        
 	public IActionResult Careers()
         {
             return View();

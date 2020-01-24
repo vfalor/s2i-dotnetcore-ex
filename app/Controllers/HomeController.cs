@@ -38,6 +38,27 @@ namespace app.Controllers
         {
             return View();
         }
+        public IActionResult security()
+
+        {
+
+            return View();
+
+        }
+        public IActionResult privacy()
+
+        {
+
+            return View();
+
+        }
+        public IActionResult termsofUse()
+
+        {
+
+            return View();
+
+        }
 
 	public IActionResult Careers()
         {

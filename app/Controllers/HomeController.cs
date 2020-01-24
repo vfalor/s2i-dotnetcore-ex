@@ -49,7 +49,27 @@ namespace app.Controllers
             return View();
         }
 
+	public IActionResult Product()
+        {
+            return View();
+        }
+
 	public IActionResult Categary1()
+        {
+            return View();
+        }
+
+	public IActionResult Categary2()
+        {
+            return View();
+        }
+
+	public IActionResult Categary3()
+        {
+            return View();
+        }
+
+	public IActionResult Categary4()
         {
             return View();
         }

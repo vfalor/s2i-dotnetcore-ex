@@ -65,7 +65,10 @@ namespace app.Controllers
         {
             return View();
         }
-
+public IActionResult sportswear()
+        {
+            return View();
+        }
 	public IActionResult Categary1()
         {
             return View();

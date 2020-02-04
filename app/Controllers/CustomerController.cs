@@ -12,8 +12,19 @@ namespace app.Controllers
 {
     public class CustomerController : Controller
     {
-        public ActionResult Details()
+	public ActionResult Index()
         {
+		ApplicationDbContext applicationDbContext = new ApplicationDbContext();
+		List<xxIBM_PRODUCT_STYLE> IBM_PRODUCT_STYLEs = applicationDbContext.xxIBM_PRODUCT_STYLEs.ToList();
+
+		return View(IBM_PRODUCT_STYLEs);
+        }
+
+        public ActionResult Details(int id)
+        {
+		ApplicationDbContext applicationDbContext = new ApplicationDbContext();
+		xxIBM_PRODUCT_STYLE IBM_PRODUCT_STYLE = applicationDbContext.xxIBM_PRODUCT_STYLEs.Single(emp => emp.EmployeeId ==id);
+
 		Customer customer = new Customer()
 		{
 			CustomerId = 101,

@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Entity;
+//using Microsoft.Entity;
 
 
 namespace app.Models

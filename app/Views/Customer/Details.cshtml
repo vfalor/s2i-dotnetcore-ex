@@ -1,0 +1,25 @@
+﻿@model app.Models.Customer
+@{
+    ViewData["Title"] = "Customer Details";
+}
+<h2>@ViewData["Title"]</h2>
+<!--<h3>@ViewData["Message"]</h3>-->
+
+<table style="font-family:Arial">
+<tr>
+<td>Customer Id : </td>
+<td>@Model.CustomerId</td>
+</tr>
+<tr>
+<td>Name : </td>
+<td>@Model.Name</td>
+</tr>
+<tr>
+<td>Gender : </td>
+<td>@Model.Gender</td>
+</tr>
+<tr>
+<td>City : </td>
+<td>@Model.City</td>
+</tr>
+</table>

@@ -33,7 +33,7 @@ namespace app.Models
         	// Add your customizations after calling base.OnModelCreating(builder);
     	}
 
-	public virtual DbSet<xxIBM_PRODUCT_SCU> XXIBM_PRODUCT_SKU {get; set;}
+	public virtual DbSet<xxIBM_PRODUCT_SKU> XXIBM_PRODUCT_SKU {get; set;}
 	public virtual DbSet<xxIBM_PRODUCT_PRICING> XXIBM_PRODUCT_PRICING {get; set;}
 	public virtual DbSet<xxIBM_PRODUCT_CATALOGUE> XXIBM_PRODUCT_CATALOGUE {get; set;}
 	public virtual DbSet<xxIBM_PRODUCT_STYLE> XXIBM_PRODUCT_STYLE {get; set;}

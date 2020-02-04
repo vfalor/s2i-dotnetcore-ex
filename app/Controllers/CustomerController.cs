@@ -4,8 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
-using System.Mvc;
-//using Microsoft.AspNetCore.Mvc;
+//using System.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using app.Models;
 
 namespace app.Controllers

@@ -2,12 +2,15 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 
 
 namespace app.Models
 {
     public class ApplicationDbContext : DbContext
     {
+	public DbSet<xxIBM_PRODUCT_STYLE> xxIBM_PRODUCT_STYLEs {get; set;}
+
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options)
         : base(options)
     	{

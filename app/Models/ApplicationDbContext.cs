@@ -15,17 +15,17 @@ namespace app.Models
 
     	protected override void OnModelCreating(ModelBuilder modelBuilder)
     	{
-		modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
-			.Property(e -> e.DESCRIPTION)
-			.ISNIcode(false);
+		//modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
+		//	.Property(e -> e.DESCRIPTION)
+		//	.ISNIcode(false);
 
-		modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
-			.Property(e -> e.LONG_DESCRIPTION)
-			.ISNIcode(false);
+		//modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
+		//	.Property(e -> e.LONG_DESCRIPTION)
+		//	.ISNIcode(false);
 
-		modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
-			.Property(e -> e.BRAND)
-			.ISNIcode(false);
+		//modelBuilder.Entity<xxIBM_PRODUCT_STYLE>()
+		//	.Property(e -> e.BRAND)
+		//	.ISNIcode(false);
 
         	//base.OnModelCreating(builder);
         	// Customize the ASP.NET Identity model and override the defaults if needed.

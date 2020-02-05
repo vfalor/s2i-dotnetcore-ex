@@ -15,32 +15,7 @@ namespace app.Controllers
     {
         public IActionResult Index()
         {
-	List<xxIBM_PRODUCT_STYLEModel> xxIBM_PRODUCT_STYLEs = new List<xxIBM_PRODUCT_STYLEModel>();
-        
-	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb";
-        using (MySqlConnection con = new MySqlConnection(constr))
-        {
-            string query = "SELECT ITEM_NUMBER, DESCRIPITION, LONG_DESCRIPTION FROM xxIBM_PRODUCT_STYLE";
-            using (MySqlCommand cmd = new MySqlCommand(query))
-            {
-               cmd.Connection = con;
-               con.Open();
-                using (MySqlDataReader sdr = cmd.ExecuteReader())
-                {
-                    while (sdr.Read())
-                    {
-                        xxIBM_PRODUCT_STYLEs.Add(new xxIBM_PRODUCT_STYLEModel
-                        {
-                            ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
-                            DESCRIPITION = sdr["DESCRIPITION"].ToString(),
-                            LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString()
-                        });
-                    }
-                }
-                con.Close();
-            }
-        }
-            return View();
+	    return View();
         }
 
         public IActionResult About()

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<app.Models.xxIBM_PRODUCT_STYLE>
+﻿@model IEnumerable<app.Models.xxIBM_PRODUCT_STYLEs>
 @using app.Models;
 @{
     ViewData["Title"] = "Style List";
@@ -8,7 +8,7 @@
 
 <div style="font-family:Arial">
 <ul>
-	@foreach (xxIBM_PRODUCT_STYLE style in @Model)
+	foreach (xxIBM_PRODUCT_STYLE style in Model)
 	{
 		<li>
 			Html.ActionLink(style.DESCRIPITION, "Details", New (id = style.ITEM_NUMBER));

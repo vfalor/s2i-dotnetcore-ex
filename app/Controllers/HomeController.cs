@@ -31,7 +31,7 @@ List<xxIBM_PRODUCT_STYLEModel> xxIBM_PRODUCT_STYLEs = new List<xxIBM_PRODUCT_STY
                 {
                     while (sdr.Read())
                     {
-                        xxIBM_PRODUCT_STYLEs.Add(new xxIBM_PRODUCT_STYLE
+                        xxIBM_PRODUCT_STYLEs.Add(new xxIBM_PRODUCT_STYLEModel
                         {
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPITION = sdr["DESCRIPITION"].ToString(),

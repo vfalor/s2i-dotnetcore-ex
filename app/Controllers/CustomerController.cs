@@ -14,10 +14,15 @@ namespace app.Controllers
     {
 	public ActionResult Index()
         {
-		ApplicationDbContext applicationDbContext = new ApplicationDbContext();
+		
+		using (var context = new ApplicationDbContext())
+		{
+		
 		List<xxIBM_PRODUCT_STYLE> IBM_PRODUCT_STYLEs = applicationDbContext.xxIBM_PRODUCT_STYLEs.ToList();
 
+
 		return View(IBM_PRODUCT_STYLEs);
+		}
         }
 
         public ActionResult Details(int id)

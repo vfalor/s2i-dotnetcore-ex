@@ -11,7 +11,7 @@
 	@foreach (xxIBM_PRODUCT_STYLE style in @Model)
 	{
 		<li>
-			@Html.ActionLink(style.DESCRIPITION, "Details", New (id = style.ITEM_NUMBER));
+			Html.ActionLink(style.DESCRIPITION, "Details", New (id = style.ITEM_NUMBER));
 		</li>
 	}
 </ul>

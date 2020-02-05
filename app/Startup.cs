@@ -32,8 +32,8 @@ namespace app
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-	    services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+	    //services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         //services.AddIdentity<ApplicationUser, IdentityRole>()
             //.AddEntityFrameworkStores<ApplicationDbContext>()

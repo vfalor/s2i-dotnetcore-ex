@@ -28,7 +28,7 @@ namespace app.Controllers
         public ActionResult Details(int id)
         {
 		ApplicationDbContext applicationDbContext = new ApplicationDbContext();
-		xxIBM_PRODUCT_STYLE IBM_PRODUCT_STYLE = applicationDbContext.xxIBM_PRODUCT_STYLEs.Single(emp => emp.EmployeeId ==id);
+		xxIBM_PRODUCT_STYLE IBM_PRODUCT_STYLE = applicationDbContext.xxIBM_PRODUCT_STYLEs.Single(emp => emp.ITEM_NUMBER ==id);
 
 		Customer customer = new Customer()
 		{

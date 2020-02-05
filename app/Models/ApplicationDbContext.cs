@@ -11,10 +11,10 @@ namespace app.Models
 	public DbSet<xxIBM_PRODUCT_STYLE> xxIBM_PRODUCT_STYLEs {get; set;}
 
         //public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options)        : base(options)
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    	{
-        	optionsBuilder.UseSqlite("host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1");
-    	}
+	//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    	//{
+        	//optionsBuilder.UseSqlite("host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1");
+    	//}
 
     	protected override void OnModelCreating(ModelBuilder modelBuilder)
     	{

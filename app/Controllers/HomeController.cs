@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using app.Models;
 
-using System.Data;
-using System.Configuration;
 using MySql.Data.MySqlClient;
 
 

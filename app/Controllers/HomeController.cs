@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using app.Models;
 
-using MySql.Data.EntityFrameworkCore;
+using MySql.Data;
 
 
 namespace app.Controllers

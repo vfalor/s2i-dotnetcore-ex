@@ -25,7 +25,8 @@ namespace app.Controllers
 	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
         using (MySqlConnection con = new MySqlConnection(constr))
         {
-            string query = "SELECT ITEM_NUMBER, DESCRIPTION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
+            //string query = "SELECT ITEM_NUMBER, DESCRIPTION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
+            string query = "SELECT table_schema from information_schema.TABLES GROUP BY table_schema";
 
 	    if(strSearch != null)
 		query += " where DESCRIPTION like '%"+strSearch+"%' ";
@@ -40,9 +41,9 @@ namespace app.Controllers
                     {
                         productModels.Add(new ProductModel
                         {
-                            ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
+                            ITEM_NUMBER = 1 //Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPTION = sdr["DESCRIPTION"].ToString(),
-                            LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString()
+                            LONG_DESCRIPTION = sdr["DESCRIPTION"].ToString()//sdr["LONG_DESCRIPTION"].ToString()
                         });
                     }
                 }

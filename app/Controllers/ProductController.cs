@@ -27,7 +27,7 @@ namespace app.Controllers
         {
             //string query = "SELECT ITEM_NUMBER, DESCRIPTION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
             //string query = "SELECT table_schema from information_schema.TABLES GROUP BY table_schema";
-	    string query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb'";
+	    string query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb' ";
 
 	    if(strSearch != null)
 		query += " where DESCRIPTION like '%"+strSearch+"%' ";

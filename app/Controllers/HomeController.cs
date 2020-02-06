@@ -28,11 +28,8 @@ namespace app.Controllers
 
             return View();
         }
-        public IActionResult ProductCatalog()
-        {
-            return View();
-        }
-        public IActionResult privacy()
+        
+       public IActionResult privacy()
         {
             return View();
         }

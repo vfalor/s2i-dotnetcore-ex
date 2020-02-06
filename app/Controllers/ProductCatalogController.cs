@@ -29,7 +29,7 @@ namespace app.Controllers
 	    string query = "SELECT * FROM XXIBM_PRODUCT_CATALOGUE ";
 
 	    if(id != null)
-		query += " where COMMODITY_NAME like '%"+id+"%' ";
+		query += " where COMMODITY_NAME like '%"+id+"%' or FAMILY_NAME like '%"+id+"%' or CLASS_NAME like '%"+id+"%' or CLASS like '%"+id+"%' ";
 
             using (MySqlCommand cmd = new MySqlCommand(query))
             {

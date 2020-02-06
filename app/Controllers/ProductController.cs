@@ -46,17 +46,11 @@ namespace app.Controllers
             }
         }
 		
-		//using (var context = new ApplicationDbContext())
-		//{
 		
-		//List<xxIBM_PRODUCT_STYLE> IBM_PRODUCT_STYLEs = applicationDbContext.xxIBM_PRODUCT_STYLEs.ToList();
 
-
-		return View(productModels);
-		//}
+		
         }
 
-        
-
+        return View(productModels);
     }
 }

@@ -15,7 +15,7 @@ using MySql.Data.MySqlClient;
 
 namespace app.Controllers
 {
-    public class PricingController : Controller
+    public class ProductPricingController : Controller
     {
 	public ActionResult Index(string id)
         {

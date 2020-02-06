@@ -40,10 +40,10 @@ namespace app.Controllers
                     {
                         pricingModels.Add(new PRODUCT_PRICING
                         {
-			    PRICE_ID = Convert.toInt32(sdr["PRICE_ID"]),
-                            ITEM_NUMBER = Convert.toInt32(sdr["ITEM_NUMBER"]),
-                            LIST_PRICE = Convert.toFloat(sdr["LIST_PRICE"]),
-                            DISCOUNT = Convert.toFloat(sdr["DISCOUNT"]),
+			    PRICE_ID = Convert.ToInt32(sdr["PRICE_ID"]),
+                            ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
+                            LIST_PRICE = Convert.ToFloat(sdr["LIST_PRICE"]),
+                            DISCOUNT = Convert.ToFloat(sdr["DISCOUNT"]),
 			    IN_STOCK = sdr["IN_STOCK"].ToString()
 
                         });

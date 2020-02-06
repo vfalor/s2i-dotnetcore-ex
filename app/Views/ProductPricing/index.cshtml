@@ -1,0 +1,38 @@
+﻿@using app.Models;
+@model IEnumerable<app.Models.PRODUCT_PRICING>
+@{
+    ViewData["Title"] = "PRODUCT PRICING List";
+}
+<h2>@ViewData["Title"]</h2>
+<!--<h3>@ViewData["Message"]</h3>-->
+
+<div style="font-family:Arial">
+<Table cellpadding="2" cellspacing="2" border="1">
+<tr>
+<th>PRICE_ID</th>
+<th>ITEM_NUMBER</th>
+<th>LIST_PRICE</th>
+<th>DISCOUNT</th>
+<th>IN_STOCK</th>
+<th>PRICE_EFFECTIVE_DATE</th>
+</tr>
+	@foreach (PRODUCT_PRICING style in Model)
+	{
+	<tr>
+		<TD>@style.PRICE_ID</TD>
+		<TD>@style.ITEM_NUMBER</TD>
+		<TD>@style.LIST_PRICE</TD>
+		<TD>@style.DISCOUNT</TD>
+		<TD>@style.IN_STOCK</TD>
+		<TD>@style.PRICE_EFFECTIVE_DATE</TD>
+	</tr>
+	}
+</ul>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

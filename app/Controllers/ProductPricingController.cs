@@ -42,8 +42,8 @@ namespace app.Controllers
                         {
 			    PRICE_ID = Convert.ToInt32(sdr["PRICE_ID"]),
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
-                            LIST_PRICE = Convert.ToFloat(sdr["LIST_PRICE"]),
-                            DISCOUNT = Convert.ToFloat(sdr["DISCOUNT"]),
+                            LIST_PRICE = float.Parse(sdr["LIST_PRICE"]),
+                            DISCOUNT = float.Parse(sdr["DISCOUNT"]),
 			    IN_STOCK = sdr["IN_STOCK"].ToString()
 
                         });

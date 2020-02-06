@@ -17,7 +17,7 @@ namespace app.Controllers
 {
     public class ProductCatalogController : Controller
     {
-	public ActionResult Index()
+	public ActionResult Index(string id)
         {
 
 	List<PRODUCT_CATALOG> productCatalogs = new List<PRODUCT_CATALOG>();
@@ -27,6 +27,10 @@ namespace app.Controllers
         {
             //string query = "SELECT SEGMENT,SEGMENT_NAME,FAMILY,FAMILY_NAME,CLASS,CLASS_NAME,COMMODITY,COMMODITY_NAME FROM XXIBM_PRODUCT_CATALOGUE ";
 	    string query = "SELECT * FROM XXIBM_PRODUCT_CATALOGUE ";
+
+	    if(id != null)
+		query += " where SEGMENT_NAME like '%"+id+"%' ";
+
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
                cmd.Connection = con;

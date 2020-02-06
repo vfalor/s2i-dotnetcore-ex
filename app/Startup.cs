@@ -64,6 +64,12 @@ namespace app
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+		routes.MapRoute(
+            		"ProductDetails",
+            		"Product/Index/{strSearch}",
+            		new { controller = "Product", action = "Index", strSearch = UrlParameter.Optional });
+
             });
         }
     }

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace app.Models
 {
-    public class PRODUCT_PRICING
+    public class Pricing
     {
         [Key]
 	public int PRICE_ID {get; set;}

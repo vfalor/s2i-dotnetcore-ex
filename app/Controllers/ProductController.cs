@@ -17,7 +17,7 @@ namespace app.Controllers
 {
     public class ProductController : Controller
     {
-	public ActionResult Index(string strSearch)
+	public ActionResult Index(string id)
         {
 
 	List<ProductModel> productModels = new List<ProductModel>();
@@ -29,8 +29,8 @@ namespace app.Controllers
             //string query = "SELECT table_schema from information_schema.TABLES GROUP BY table_schema";
 	    //string query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb' ";
 
-	    if(strSearch != null)
-		query += " where DESCRIPTION like '%"+strSearch+"%' ";
+	    if(id != null)
+		query += " where DESCRIPTION like '%"+id+"%' ";
 
             using (MySqlCommand cmd = new MySqlCommand(query))
             {

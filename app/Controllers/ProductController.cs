@@ -48,9 +48,9 @@ namespace app.Controllers
 		
 		
 
-		
+	return View(productModels);	
         }
 
-        return View(productModels);
+        
     }
 }

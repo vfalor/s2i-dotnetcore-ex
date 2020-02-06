@@ -20,8 +20,8 @@ namespace app.Controllers
 	public ActionResult Index()
         {
 
-	List<xxIBM_PRODUCT_STYLE> xxIBM_PRODUCT_STYLEs = new List<xxIBM_PRODUCT_STYLE>();
-        //string constr = ConfigurationManager.ConnectionStrings["ConString"].ConnectionString;
+	List<xxIBM_PRODUCT_STYLEModel> xxIBM_PRODUCT_STYLEs = new List<xxIBM_PRODUCT_STYLEModel>();
+        
 	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb";
         using (MySqlConnection con = new MySqlConnection(constr))
         {
@@ -34,7 +34,7 @@ namespace app.Controllers
                 {
                     while (sdr.Read())
                     {
-                        xxIBM_PRODUCT_STYLEs.Add(new xxIBM_PRODUCT_STYLE
+                        xxIBM_PRODUCT_STYLEs.Add(new xxIBM_PRODUCT_STYLEModel
                         {
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPITION = sdr["DESCRIPITION"].ToString(),

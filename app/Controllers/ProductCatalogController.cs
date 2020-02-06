@@ -25,8 +25,7 @@ namespace app.Controllers
 	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
         using (MySqlConnection con = new MySqlConnection(constr))
         {
-            string query = "SELECT SEGMENT,SEGMENT_NAME,FAMILY,FAMILY_NAME,CLASS,CLASS_NAME,COMMODITY,COMMODITY_NAME
-            FROM XXIBM_PRODUCT_CATALOG ";
+            string query = "SELECT SEGMENT,SEGMENT_NAME,FAMILY,FAMILY_NAME,CLASS,CLASS_NAME,COMMODITY,COMMODITY_NAME FROM XXIBM_PRODUCT_CATALOG ";
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
                cmd.Connection = con;

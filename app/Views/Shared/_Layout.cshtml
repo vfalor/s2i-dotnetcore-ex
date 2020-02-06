@@ -35,13 +35,13 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
 		    <li><a asp-area="" asp-controller="Product" asp-action="Index">Product</a></li>
-                </ul>
-            </div>
-	    <div class="navbar-collapse collapse">
-		<input type="text" name="txtSearch" id="txtSearch" Value="" width="20">
+		    <li>_______________________________________________</li>
+
+		    <li><input type="text" name="txtSearch" id="txtSearch" Value="" width="20">
 		<Input type="button" class="Search" Value="Search" Text="Search" 
-onClick="if(document.getElementById('txtSearch').value != '')document.location.href='/Product/Index?'+document.getElementById('txtSearch').value;else{alert('Please enter your search criteria!!');}"> 
-	    </div>
+onClick="if(document.getElementById('txtSearch').value != '')document.location.href='/Product/Index?'+document.getElementById('txtSearch').value;else{alert('Please enter your search criteria!!');}"></li>
+                </ul>
+            </div>	    
         </div>
     </nav>
 

@@ -20,7 +20,7 @@ namespace app.Controllers
 	public ActionResult Index()
         {
 
-	List<ProductModel> productModels = new List<ProductModel>();
+	List<PRODUCT_CATALOG> productCatalogs = new List<PRODUCT_CATALOG>();
         
 	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
         using (MySqlConnection con = new MySqlConnection(constr))
@@ -35,7 +35,7 @@ namespace app.Controllers
                 {
                     while (sdr.Read())
                     {
-                        productModels.Add(new ProductModel
+                        productCatalogs.Add(new PRODUCT_CATALOG
                         {
                             SEGMENT = Convert.ToInt32(sdr["SEGMENT"]),
                             SEGMENT_NAME = sdr["SEGMENT_NAME"].ToString(),
@@ -54,7 +54,7 @@ namespace app.Controllers
 		
 		
 
-	return View(productModels);	
+	return View(productCatalogs);	
         }
 
         

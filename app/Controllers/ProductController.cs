@@ -17,7 +17,7 @@ namespace app.Controllers
 {
     public class ProductController : Controller
     {
-	public ActionResult Index()
+	public ActionResult Index(string strSearch)
         {
 
 	List<ProductModel> productModels = new List<ProductModel>();
@@ -26,6 +26,10 @@ namespace app.Controllers
         using (MySqlConnection con = new MySqlConnection(constr))
         {
             string query = "SELECT ITEM_NUMBER, DESCRIPTION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
+
+	    if(strSearch != null)
+		query += " where DESCRIPTION like '%"+strSearch+"%' ";
+
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
                cmd.Connection = con;

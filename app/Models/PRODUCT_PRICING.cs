@@ -13,6 +13,6 @@ namespace app.Models
   public String LIST_PRICE {get; set;}
   public String DISCOUNT {get; set;}
   public String IN_STOCK {get; set;}
-  public int PRICE_EFFECTIVE_DATE {get; set;}
+  public String PRICE_EFFECTIVE_DATE {get; set;}
     }
 }

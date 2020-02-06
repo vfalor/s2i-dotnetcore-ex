@@ -9,7 +9,7 @@ namespace app.Models
     {
         [Key]
 	public int ITEM_NUMBER {get; set;}
-	public String DESCRIPITION {get; set;}
+	public String DESCRIPTION {get; set;}
 	public String LONG_DESCRIPTION {get; set;}
 	public int CATALOGUE_CATEGORY {get; set;}
 	public String BRAND {get; set;}

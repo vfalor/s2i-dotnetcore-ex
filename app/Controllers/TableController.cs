@@ -15,7 +15,7 @@ using MySql.Data.MySqlClient;
 
 namespace app.Controllers
 {
-    public class ProductController : Controller
+    public class TableController : Controller
     {
 	public ActionResult Index(string strSearch)
         {

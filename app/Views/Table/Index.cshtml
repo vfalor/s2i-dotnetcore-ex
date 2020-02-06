@@ -1,0 +1,30 @@
+﻿@using app.Models;
+@model IEnumerable<app.Models.TableModel>
+@{
+    ViewData["Title"] = "Style List";
+}
+<h2>@ViewData["Title"]</h2>
+<!--<h3>@ViewData["Message"]</h3>-->
+
+<div style="font-family:Arial">
+<Table cellpadding="0" cellspacing="0">
+<tr>
+<th>ITEM NUMBER</th>
+<th>TABLE NAME</th>
+</tr>
+	@foreach (TableModel style in Model)
+	{
+	<tr>
+		<TD>@style.ITEM_NUMBER</TD>
+		<TD>@style.TABLE_NAME</TD>
+	</tr>
+	}
+</ul>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

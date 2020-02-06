@@ -66,10 +66,9 @@ namespace app
                     template: "{controller=Home}/{action=Index}/{id?}");
 
 		routes.MapRoute(
-            		"ProductDetails",
-            		"Product/Index/{strSearch}",
-            		new { controller = "Product", action = "Index", strSearch = UrlParameter.Optional });
-
+            		name: "ProductDetails",
+			template: "{controller=Product}/{action=Index}/{strSearch?}");
+            		
             });
         }
     }

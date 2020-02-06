@@ -30,7 +30,7 @@ namespace app.Controllers
 	    //string query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb' ";
 
 	    if(id != null)
-		query += " where DESCRIPTION like '%"+id+"%' ";
+		query += " where DESCRIPTION like '%"+id+"%' or LONG_DESCRIPTION like '%"+id+"%'";
 
             using (MySqlCommand cmd = new MySqlCommand(query))
             {

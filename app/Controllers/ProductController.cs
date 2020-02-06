@@ -41,7 +41,7 @@ namespace app.Controllers
                     {
                         productModels.Add(new ProductModel
                         {
-                            ITEM_NUMBER = 1 //Convert.ToInt32(sdr["ITEM_NUMBER"]),
+                            ITEM_NUMBER = 1, //Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPTION = sdr["DESCRIPTION"].ToString(),
                             LONG_DESCRIPTION = sdr["DESCRIPTION"].ToString()//sdr["LONG_DESCRIPTION"].ToString()
                         });

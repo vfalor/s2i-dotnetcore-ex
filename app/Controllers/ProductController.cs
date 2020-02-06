@@ -22,10 +22,10 @@ namespace app.Controllers
 
 	List<ProductModel> productModels = new List<ProductModel>();
         
-	string constr = "host=mysql-gamification.inmbzp8022.in.dst.ibm.com; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
+	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
         using (MySqlConnection con = new MySqlConnection(constr))
         {
-            string query = "SELECT ITEM_NUMBER, DESCRIPITION, LONG_DESCRIPTION FROM sampledb.xxIBM_PRODUCT_STYLE";
+            string query = "SELECT ITEM_NUMBER, DESCRIPITION, LONG_DESCRIPTION FROM xxIBM_PRODUCT_STYLE";
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
                cmd.Connection = con;

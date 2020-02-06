@@ -1,0 +1,42 @@
+﻿@using app.Models;
+@model IEnumerable<app.Models.PRODUCT_CATALOG>
+@{
+    ViewData["Title"] = "Style List";
+}
+<h2>@ViewData["Title"]</h2>
+<!--<h3>@ViewData["Message"]</h3>-->
+
+<div style="font-family:Arial">
+<Table cellpadding="0" cellspacing="0">
+<tr>
+<th>SEGMENT</th>
+<th>SEGMENT_NAME</th>
+<th>FAMILY</th>
+<th>FAMILY_NAME</th>
+<th>CLASS</th>
+<th>CLASS_NAME</th>
+<th>COMMODITY</th>
+<th>COMMODITY_NAME</th>
+</tr>
+	@foreach (PRODUCT_CATALOG style in Model)
+	{
+	<tr>
+		<TD>@style.SEGMENT</TD>
+		<TD>@style.SEGMENT_NAME</TD>
+		<TD>@style.FAMILY</TD>
+		<TD>@style.FAMILY_NAME</TD>
+		<TD>@style.CLASS</TD>
+		<TD>@style.CLASS_NAME</TD>
+		<TD>@style.COMMODITY</TD>
+		<TD>@style.COMMODITY_NAME</TD>
+	</tr>
+	}
+</ul>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

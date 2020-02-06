@@ -25,7 +25,7 @@ namespace app.Controllers
 	string constr = "host=custom-mysql.gamification.svc.cluster.local; port=3306; database=sampledb; uid=xxuser; pwd=welcome1;";
         using (MySqlConnection con = new MySqlConnection(constr))
         {
-            string query = "SELECT ITEM_NUMBER, DESCRIPITION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
+            string query = "SELECT ITEM_NUMBER, DESCRIPTION, LONG_DESCRIPTION FROM XXIBM_PRODUCT_STYLE ";
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
                cmd.Connection = con;
@@ -37,7 +37,7 @@ namespace app.Controllers
                         productModels.Add(new ProductModel
                         {
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
-                            DESCRIPITION = sdr["DESCRIPITION"].ToString(),
+                            DESCRIPTION = sdr["DESCRIPTION"].ToString(),
                             LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString()
                         });
                     }

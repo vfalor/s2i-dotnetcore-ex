@@ -15,7 +15,7 @@
 	@foreach (TableModel style in Model)
 	{
 	<tr>
-		<TD>@style.TABLE_NAME</TD>
+		<TD><a href="~/table/index/@style.TABLE_NAME">@style.TABLE_NAME</a></TD>
 		<TD>@style.COLUMN_NAME</TD>
 	</tr>
 	}

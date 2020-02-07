@@ -44,7 +44,7 @@ namespace app.Controllers
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPTION = sdr["DESCRIPTION"].ToString(),
                             LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString(),
-			    CATALOG_CATEGORY = Convert.ToInt32(sdr["CATALOG_CATEGORY"]),
+			    CATALOGUE_CATEGORY = Convert.ToInt32(sdr["CATALOGUE_CATEGORY"]),
 			    SKU_UNIT_OF_MEASURE = sdr["SKU_UNIT_OF_MEASURE"].ToString(),
 			    STYLE_ITEM = Convert.ToInt32(sdr["STYLE_ITEM"]),
 			    SKU_ATTRIBUTE_1 = sdr["SKU_ATTRIBUTE_1"].ToString()

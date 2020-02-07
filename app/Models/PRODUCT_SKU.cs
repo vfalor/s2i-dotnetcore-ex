@@ -11,7 +11,7 @@ namespace app.Models
 	public int ITEM_NUMBER {get; set;}
 	public String DESCRIPTION {get; set;}
 	public String LONG_DESCRIPTION {get; set;}
-	public int CATALOG_CATEGORY {get; set;}
+	public int CATALOGUE_CATEGORY {get; set;}
   	public String SKU_UNIT_OF_MEASURE {get; set;}
   	public int STYLE_ITEM {get; set;}
   	public String SKU_ATTRIBUTE_1 {get; set;}

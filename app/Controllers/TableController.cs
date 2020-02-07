@@ -17,7 +17,7 @@ namespace app.Controllers
 {
     public class TableController : Controller
     {
-	public ActionResult Index(string strSearch)
+	public ActionResult Index(string id)
         {
 
 	List<TableModel> tableModels = new List<TableModel>();
@@ -26,7 +26,11 @@ namespace app.Controllers
         using (MySqlConnection con = new MySqlConnection(constr))
         {
             //string query = "SELECT table_schema from information_schema.TABLES GROUP BY table_schema";
-	    string query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb' ";
+	    string query = "SELECT table_name AS NAME FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='sampledb' ";
+
+	    if(id != null)
+		query = "SELECT COLUMN_NAME AS NAME FROM information_schema.columns WHERE table_schema='sampledb' AND table_name='"+id+"' ";
+		//AND COLUMN_NAME LIKE '[wildcard]'
 
             using (MySqlCommand cmd = new MySqlCommand(query))
             {
@@ -39,7 +43,7 @@ namespace app.Controllers
                         tableModels.Add(new TableModel
                         {
                             ITEM_NUMBER = 1, 
-                            TABLE_NAME = sdr["table_name"].ToString()
+                            TABLE_NAME = sdr["NAME"].ToString()
                         });
                     }
                 }

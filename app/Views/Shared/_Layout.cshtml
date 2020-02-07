@@ -18,19 +18,25 @@
     </environment>
 
 <script>
+var AutoChange = 1
 function LoadSelectedTypePage() {
-  if(document.getElementById('dbOption').value != "")
+  if(document.getElementById('dbOption').value != "" && AutoChange != 0)
 	document.location.href='/'+document.getElementById('dbOption').value+'/Index';	
+
+	AutoChange = 1;
 }
 
-function SelectedTypePage() {
+function SelectedTypePage() { }
+
 $(document).ready(function () {
     if(window.location.contains("ProductCatalog")) // This doesn't work, any suggestions?
     {
-	document.getElementById('dbOption').selectedIndex= 1;
+	AutoChange = 0;
+	document.getElementById('dbOption').selectedIndex = 1;
+	
     }
 });	
-}
+
 </script> 
 </head>
 <body>

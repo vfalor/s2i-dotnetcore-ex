@@ -8,7 +8,7 @@ namespace app.Models
     public class TableModel
     {
         [Key]
-	public int ITEM_NUMBER {get; set;}
 	public String TABLE_NAME {get; set;}
+	public String COLUMN_NAME {get; set;}
     }
 }

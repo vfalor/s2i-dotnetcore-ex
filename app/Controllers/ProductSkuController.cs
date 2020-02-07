@@ -28,7 +28,7 @@ namespace app.Controllers
             string query = "SELECT * FROM XXIBM_PRODUCT_SKU ";
 
 	    if(id != null)
-		query += " where ITEM_NUMBER like '%"+id+"%' or DESCRIPTION like '%"+id+"%' or LONG_DESCRIPTION like '%"+id+"%' or SKU_UNIT_OF_MEASURE like '%"+id+"%'";
+		query += " where ITEM_NUMBER like '%"+id+"%' or DESCRIPTION like '%"+id+"%' or LONG_DESCRIPTION like '%"+id+"%' or SKU_UNIT_OF_MEASURE like '%"+id+"%' or SKU_ATTRIBUTE1 like '%"+id+"%' or SKU_ATTRIBUTE_VALUE1 like '%"+id+"%'";
 
             using (MySqlCommand cmd = new MySqlCommand(query))
             {

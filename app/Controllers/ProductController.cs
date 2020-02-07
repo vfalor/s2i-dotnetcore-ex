@@ -44,7 +44,9 @@ namespace app.Controllers
                         {
                             ITEM_NUMBER = Convert.ToInt32(sdr["ITEM_NUMBER"]),
                             DESCRIPTION = sdr["DESCRIPTION"].ToString(),
-                            LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString()
+                            LONG_DESCRIPTION = sdr["LONG_DESCRIPTION"].ToString(),
+			    CATALOGUE_CATEGORY = sdr["CATALOGUE_CATEGORY"].ToString(),
+			    BRAND = sdr["BRAND"].ToString()
                         });
                     }
                 }

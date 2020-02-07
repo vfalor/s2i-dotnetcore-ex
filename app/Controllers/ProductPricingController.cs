@@ -45,7 +45,7 @@ namespace app.Controllers
                             LIST_PRICE = sdr["LIST_PRICE"].ToString(),
                             DISCOUNT = sdr["DISCOUNT"].ToString(),
 			    IN_STOCK = sdr["IN_STOCK"].ToString(),
-			    PRICE_EFFECTIVE_DATE = sdr["IN_STOCK"].ToString()
+			    PRICE_EFFECTIVE_DATE = sdr["PRICE_EFFECTIVE_DATE"].ToString()
 
                         });
                     }

@@ -53,12 +53,12 @@ namespace app.Controllers
 			    SKU_ATTRIBUTE_4 = sdr["SKU_ATTRIBUTE4"].ToString(),
 			    SKU_ATTRIBUTE_5 = sdr["SKU_ATTRIBUTE5"].ToString(),
 			    SKU_ATTRIBUTE_6 = sdr["SKU_ATTRIBUTE6"].ToString(),
-			    SKUATT_VALUE_1 = sdr["SKUATT_VALUE1"].ToString(),
-			    SKUATT_VALUE_2 = sdr["SKUATT_VALUE2"].ToString(),
-			    SKUATT_VALUE_3 = sdr["SKUATT_VALUE3"].ToString(),
-			    SKUATT_VALUE_4 = sdr["SKUATT_VALUE4"].ToString(),
-			    SKUATT_VALUE_5 = sdr["SKUATT_VALUE5"].ToString(),
-			    SKUATT_VALUE_6 = sdr["SKUATT_VALUE6"].ToString()
+			    SKUATT_VALUE_1 = sdr["SKU_ATT_VALUE1"].ToString(),
+			    SKUATT_VALUE_2 = sdr["SKU_ATT_VALUE2"].ToString(),
+			    SKUATT_VALUE_3 = sdr["SKU_ATT_VALUE3"].ToString(),
+			    SKUATT_VALUE_4 = sdr["SKU_ATT_VALUE4"].ToString(),
+			    SKUATT_VALUE_5 = sdr["SKU_ATT_VALUE5"].ToString(),
+			    SKUATT_VALUE_6 = sdr["SKU_ATT_VALUE6"].ToString()
                         });
                     }
                 }

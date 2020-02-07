@@ -47,8 +47,18 @@ namespace app.Controllers
 			    CATALOGUE_CATEGORY = Convert.ToInt32(sdr["CATALOGUE_CATEGORY"]),
 			    SKU_UNIT_OF_MEASURE = sdr["SKU_UNIT_OF_MEASURE"].ToString(),
 			    STYLE_ITEM = Convert.ToInt32(sdr["STYLE_ITEM"]),
-			    SKU_ATTRIBUTE_1 = sdr["SKU_ATTRIBUTE_1"].ToString()
-
+			    SKU_ATTRIBUTE_1 = sdr["SKUATTRIBUTE1"].ToString(),
+			    SKU_ATTRIBUTE_2 = sdr["SKUATTRIBUTE2"].ToString(),
+			    SKU_ATTRIBUTE_3 = sdr["SKUATTRIBUTE3"].ToString(),
+			    SKU_ATTRIBUTE_4 = sdr["SKUATTRIBUTE4"].ToString(),
+			    SKU_ATTRIBUTE_5 = sdr["SKUATTRIBUTE5"].ToString(),
+			    SKU_ATTRIBUTE_6 = sdr["SKUATTRIBUTE6"].ToString(),
+			    SKUATT_VALUE_1 = sdr["SKUATT_VALUE1"].ToString(),
+			    SKUATT_VALUE_2 = sdr["SKUATT_VALUE2"].ToString(),
+			    SKUATT_VALUE_3 = sdr["SKUATT_VALUE3"].ToString(),
+			    SKUATT_VALUE_4 = sdr["SKUATT_VALUE4"].ToString(),
+			    SKUATT_VALUE_5 = sdr["SKUATT_VALUE5"].ToString(),
+			    SKUATT_VALUE_6 = sdr["SKUATT_VALUE6"].ToString()
                         });
                     }
                 }

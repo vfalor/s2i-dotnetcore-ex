@@ -1,7 +1,7 @@
 ﻿@using app.Models;
 @model IEnumerable<app.Models.TableModel>
 @{
-    ViewData["Title"] = "Style List";
+    ViewData["Title"] = "TABLE & COLUMN List";
 }
 <h2>@ViewData["Title"]</h2>
 <!--<h3>@ViewData["Message"]</h3>-->
@@ -9,14 +9,14 @@
 <div style="font-family:Arial">
 <Table cellpadding="5" cellspacing="2" border=1>
 <tr>
-<th>ITEM NUMBER</th>
-<th>NAME</th>
+<th>TABLE NAME</th>
+<th>COLUMN NAME</th>
 </tr>
 	@foreach (TableModel style in Model)
 	{
 	<tr>
-		<TD>@style.ITEM_NUMBER</TD>
 		<TD>@style.TABLE_NAME</TD>
+		<TD>@style.COLUMN_NAME</TD>
 	</tr>
 	}
 </ul>

@@ -7,7 +7,7 @@
 <!--<h3>@ViewData["Message"]</h3>-->
 
 <div style="font-family:Arial">
-<Table cellpadding="5" cellspacing="2" border=1>
+<Table cellpadding="5" cellspacing="2" border="1" id="myTable">
 <tr>
 <th>TABLE NAME</th>
 <th>COLUMN NAME</th>
@@ -28,3 +28,15 @@
 <p></p>
 <p></p>
 <p></p>
+
+<link rel="stylesheet" type="text/css" href="~/js/DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="~/js/DataTables/datatables.min.js"></script>
+
+<script>
+
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+
+</script>

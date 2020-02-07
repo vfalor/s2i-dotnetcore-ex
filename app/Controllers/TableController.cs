@@ -40,11 +40,24 @@ namespace app.Controllers
                 {
                     while (sdr.Read())
                     {
-                        tableModels.Add(new TableModel
-                        {
-                            ITEM_NUMBER = 1, 
-                            TABLE_NAME = sdr["NAME"].ToString()
-                        });
+			if(id != null)
+			{
+                          tableModels.Add(new TableModel
+                          {
+
+                            TABLE_NAME = id.ToString(),
+                            COLUMN_NAME = sdr["NAME"].ToString()
+                          });
+			}
+			else
+			{
+			  tableModels.Add(new TableModel
+                          {
+
+                            TABLE_NAME = sdr["NAME"].ToString(),
+                            COLUMN_NAME = ""
+                          });
+			}
                     }
                 }
                 con.Close();

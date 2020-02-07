@@ -16,6 +16,22 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+<script>
+function LoadSelectedTypePage() {
+  if(document.getElementById('dbOption').value != "")
+	document.location.href='/'+document.getElementById('dbOption').value+'/Index';	
+}
+
+function SelectedTypePage() {
+$(document).ready(function () {
+    if(window.location.contains("ProductCatalog")) // This doesn't work, any suggestions?
+    {
+	document.getElementById('dbOption').selectedIndex= 1;
+    }
+});	
+}
+</script> 
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -37,7 +53,8 @@
 		    <li><a asp-area="" asp-controller="Home" asp-action="Product">Product</a></li>
 		    <li>_______________________________________________</li>
 
-		    <li><select name="dbOption" id="dbOption">
+		    <li><select name="dbOption" id="dbOption" onChange="LoadSelectedTypePage()">
+  <option value="">Select Type</option>
   <option value="ProductCatalog">CATALOGUE</option>
   <option value="Product">STYLE</option>
   <option value="ProductPricing">PRICING</option>

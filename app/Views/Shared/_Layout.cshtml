@@ -29,10 +29,28 @@ function LoadSelectedTypePage() {
 function SelectedTypePage() { }
 
 $(document).ready(function () {
-    if(window.location.contains("ProductCatalog")) // This doesn't work, any suggestions?
+    if(window.location.href.indexOf("ProductCatalog") > -1) 
     {
 	AutoChange = 0;
 	document.getElementById('dbOption').selectedIndex = 1;
+	
+    }
+    else if(window.location.href.indexOf("ProductPricing") > -1) 
+    {
+	AutoChange = 0;
+	document.getElementById('dbOption').selectedIndex = 3;
+	
+    }
+    else if(window.location.href.indexOf("ProductSku") > -1) 
+    {
+	AutoChange = 0;
+	document.getElementById('dbOption').selectedIndex = 4;
+	
+    }
+    else if(window.location.href.indexOf("Product") > -1) 
+    {
+	AutoChange = 0;
+	document.getElementById('dbOption').selectedIndex = 2;
 	
     }
 });	

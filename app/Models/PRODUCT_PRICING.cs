@@ -10,9 +10,9 @@ namespace app.Models
         [Key]
 	public int PRICE_ID {get; set;}
 	public int ITEM_NUMBER {get; set;}
-  public String LIST_PRICE {get; set;}
-  public String DISCOUNT {get; set;}
-  public String IN_STOCK {get; set;}
-  public String PRICE_EFFECTIVE_DATE {get; set;}
+  	public String LIST_PRICE {get; set;}
+	public String DISCOUNT {get; set;}
+	public String IN_STOCK {get; set;}
+	public String PRICE_EFFECTIVE_DATE {get; set;}
     }
 }

@@ -86,7 +86,7 @@ if(1 > 2)
 
 		    <li><select name="dbOption" id="dbOption" >
   <option value="" >Select Type</option>
-  <option value="ProductCatalog" Selected @(pageName == "ProductCatalog" ? "Selected" : "") >CATALOGUE</option>
+  <option value="ProductCatalog" @((pageName.IndexOf("ProductCatalog") > -1) ? "Selected" : "") >CATALOGUE</option>
   <option value="Product" @(pageName == "Product" ? "Selected" : "") >STYLE</option>
   <option value="ProductPricing" @((pageName.IndexOf("ProductPricing") > -1) ? "Selected" : "") >PRICING</option>
   <option value="ProductSku" @((pageName.IndexOf("ProductSku") > -1) ? "Selected" : "") >Product SKU</option>

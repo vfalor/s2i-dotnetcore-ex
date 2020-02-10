@@ -88,8 +88,8 @@ if(1 > 2)
   <option value="" >Select Type</option>
   <option value="ProductCatalog" Selected @(pageName == "ProductCatalog" ? "Selected" : "") >CATALOGUE</option>
   <option value="Product" @(pageName == "Product" ? "Selected" : "") >STYLE</option>
-  <option value="ProductPricing" @((pageName.IndexOf("ProductPricing") > 0) ? "Selected" : "") >PRICING</option>
-  <option value="ProductSku" @(pageName == "ProductSku" ? "Selected" : "") >Product SKU</option>
+  <option value="ProductPricing" @((pageName.IndexOf("ProductPricing") > -1) ? "Selected" : "") >PRICING</option>
+  <option value="ProductSku" @((pageName.IndexOf("ProductSku") > -1) ? "Selected" : "") >Product SKU</option>
 </select> 
 <input type="text" name="txtSearch" id="txtSearch" Value="" width="20">
 		<Input type="button" class="Search" Value="Search" Text="Search" 

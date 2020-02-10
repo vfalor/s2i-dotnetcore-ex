@@ -1,5 +1,5 @@
 ﻿@{
- string pageName = ViewContext.RouteData.Values["controller"].ToString();
+ String pageName = ViewContext.RouteData.Values["controller"].ToString();
 }
 
 <!DOCTYPE html>
@@ -86,9 +86,9 @@ if(1 > 2)
 
 		    <li><select name="dbOption" id="dbOption" >
   <option value="" >Select Type</option>
-  <option value="ProductCatalog" @(pageName == "ProductCatalog" ? "Selected" : "") >CATALOGUE</option>
+  <option value="ProductCatalog" Selected @(pageName == "ProductCatalog" ? "Selected" : "") >CATALOGUE</option>
   <option value="Product" @(pageName == "Product" ? "Selected" : "") >STYLE</option>
-  <option value="ProductPricing" @(pageName. == "ProductPricing" ? "Selected" : "") >PRICING</option>
+  <option value="ProductPricing" @((pageName.IndexOf("ProductPricing") > 0) ? "Selected" : "") >PRICING</option>
   <option value="ProductSku" @(pageName == "ProductSku" ? "Selected" : "") >Product SKU</option>
 </select> 
 <input type="text" name="txtSearch" id="txtSearch" Value="" width="20">

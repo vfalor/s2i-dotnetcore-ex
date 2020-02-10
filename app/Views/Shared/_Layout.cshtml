@@ -1,5 +1,5 @@
 ﻿@{
- var pageName = ViewContext.RouteData.Values["controller"].ToString()
+ var pageName = ViewContext.RouteData.Values["controller"].ToString();
 }
 
 <!DOCTYPE html>
@@ -85,8 +85,8 @@ $(document).ready(function () {
   <option value="">Select Type</option>
   <option value="ProductCatalog" @(pageName == "ProductCatalogController" ? "Selected" : "") >CATALOGUE</option>
   <option value="Product" @(pageName == "ProductController" ? "Selected" : "") >STYLE</option>
-  <option value="ProductPricing" @(pageName == "ProductPricing" ? "Selected" : "">PRICING</option>
-  <option value="ProductSku" @(pageName == "ProductSku" ? "Selected" : "">Product SKU</option>
+  <option value="ProductPricing" @(pageName == "ProductPricing" ? "Selected" : "") >PRICING</option>
+  <option value="ProductSku" @(pageName == "ProductSku" ? "Selected" : "") >Product SKU</option>
 </select> 
 <input type="text" name="txtSearch" id="txtSearch" Value="" width="20">
 		<Input type="button" class="Search" Value="Search" Text="Search" 

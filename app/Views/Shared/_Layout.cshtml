@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+ var pageName = ViewContext.RouteData.Values["controller"].ToString()
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -79,10 +83,10 @@ $(document).ready(function () {
 
 		    <li><select name="dbOption" id="dbOption" >
   <option value="">Select Type</option>
-  <option value="ProductCatalog">CATALOGUE</option>
-  <option value="Product">STYLE</option>
-  <option value="ProductPricing">PRICING</option>
-  <option value="ProductSku">Product SKU</option>
+  <option value="ProductCatalog" @(pageName == "ProductCatalogController" ? "Selected" : "") >CATALOGUE</option>
+  <option value="Product" @(pageName == "ProductController" ? "Selected" : "") >STYLE</option>
+  <option value="ProductPricing" @(pageName == "ProductPricing" ? "Selected" : "">PRICING</option>
+  <option value="ProductSku" @(pageName == "ProductSku" ? "Selected" : "">Product SKU</option>
 </select> 
 <input type="text" name="txtSearch" id="txtSearch" Value="" width="20">
 		<Input type="button" class="Search" Value="Search" Text="Search" 

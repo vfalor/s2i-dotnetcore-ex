@@ -103,6 +103,16 @@ onClick="if(document.getElementById('txtSearch').value != '')document.location.h
 
     <div class="container body-content">
         @RenderBody()
+
+<script src=https://web-chat.assistant.watson.cloud.ibm.com/loadWatsonAssistantChat.js></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "5dceb894-7396-49db-bbb1-378958b84391", // The ID of this integration.
+    region: "au-syd" // The region your integration is hosted in.
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
         <hr />
         <footer>
             <p>&copy; 2020 - Henkel Kolkata Cloud2.</p> 

@@ -42,11 +42,11 @@ function goBack() {
     // We provide them here, but can extend this "options" variable
     // before we initialize the Web Chat.
     const options = {
-        integrationID: "2bfa63dc-b3d4-4d33-ae14-f9e80f18977f",
-        region: "us-south"
+        integrationID: "5dceb894-7396-49db-bbb1-378958b84391",
+        region: "au-syd"
     };
 
-    /* 
+    /* region: "us-south"
       Instructions
       - Upload the included setting-context.json skill and create a Web Chat integration in an
         assistant using the uploaded skill.
@@ -62,7 +62,7 @@ function goBack() {
     * we add some items to context.
     */
     function preSendhandler(event) {
-      event.data.context.skills['main skill'].user_defined.party_time = true;
+      event.data.context.skills['main skill'].user_defined.party_time = false;
 
       // You can OPTIONALLY return a promise and we will wait to continue processing until the promise is resolved. If
       // you return nothing we will immediately continue processing the event.
@@ -86,8 +86,6 @@ function goBack() {
     });
   
 </script>
-
-
 <link rel="stylesheet" type="text/css" href="~/js/DataTables/datatables.min.css"/>
  
 <script type="text/javascript" src="~/js/DataTables/datatables.min.js"></script>
